@@ -1,0 +1,4 @@
+beans\Adoptante.class
+beans\Mascota.class
+beans\Adopcion.class
+connection\DBConnection.class
