@@ -10,9 +10,9 @@ public class Mascota {
     private String ubicacion;
     private String raza;
     private int edad;
-    private String disponible;  
+    private boolean disponible;  
 
-    public Mascota(int idmascota, String nombremascota, String genero, String especie, String ubicacion, String raza, int edad, String disponible) {
+    public Mascota(int idmascota, String nombremascota, String genero, String especie, String ubicacion, String raza, int edad, boolean disponible) {
         this.idmascota = idmascota;
         this.nombremascota = nombremascota;
         this.genero = genero;
@@ -79,11 +79,11 @@ public class Mascota {
         this.edad = edad;
     }
 
-    public String getDisponible() {
+    public boolean isDisponible() {
         return disponible;
     }
 
-    public void setDisponible(String disponible) {
+    public void setDisponible(boolean disponible) {
         this.disponible = disponible;
     }
 
@@ -93,4 +93,5 @@ public class Mascota {
     }
     
     
+   
 }
