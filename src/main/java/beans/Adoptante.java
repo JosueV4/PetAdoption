@@ -1,5 +1,5 @@
 package beans;
-
+//maria fernanda amaya
 public class Adoptante {
     private String username;
     private String clave;
