@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 
 package beans;
 //vivan los unicornios
@@ -95,3 +97,4 @@ public class Mascota {
     
    
 }
+>>>>>>> 7da4c8d3947b1976f5b0f82b11e91b74922f5781
