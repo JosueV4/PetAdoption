@@ -1,6 +1,6 @@
 
 package beans;
-//hola
+//vivan los unicornios
 
 public class Mascota {
     private int idmascota;
