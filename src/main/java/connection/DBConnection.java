@@ -7,8 +7,8 @@ public class DBConnection {
 
     Connection connection;
 
-    static String bd = "adoptante";
-    static String port = "3306";
+    static String bd = "adopcion_mascotas";
+    static String port = "3307";
     static String login = "root";
     static String password = "admin";
 
