@@ -2,7 +2,7 @@ package beans;
 
 public class Adoptante {
     private String username;
-    private String clave;
+    private String contrasena;
     private String nombre;
     private String apellido;
     private String ciudad;
@@ -10,15 +10,19 @@ public class Adoptante {
     private Double petcoin;
     private boolean contribuyente;
 
-    public Adoptante(String username, String clave, String nombre, String apellido, String ciudad, String email, Double petcoin, boolean contribuyente) {
+    public Adoptante(String username, String contrasena, String nombre, String apellido, String ciudad, String email, Double petcoin, boolean contribuyente) {
         this.username = username;
-        this.clave = clave;
+        this.contrasena = contrasena;
         this.nombre = nombre;
         this.apellido = apellido;
         this.ciudad = ciudad;
         this.email = email;
         this.petcoin = petcoin;
         this.contribuyente = contribuyente;
+    }
+
+    public Adoptante(String username, String contrasena, String nombre, String apellido, String email, double petcoin, boolean contribuyente) {
+        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public String getUsername() {
@@ -29,12 +33,12 @@ public class Adoptante {
         this.username = username;
     }
 
-    public String getClave() {
-        return clave;
+    public String getcontrasena() {
+        return contrasena;
     }
 
-    public void setClave(String clave) {
-        this.clave = clave;
+    public void setcontrasena(String contrasena) {
+        this.contrasena = contrasena;
     }
 
     public String getNombre() {
@@ -87,7 +91,7 @@ public class Adoptante {
 
     @Override
     public String toString() {
-        return "Adoptante{" + "username=" + username + ", clave=" + clave + ", nombre=" + nombre + ", apellido=" + apellido + ", ciudad=" + ciudad + ", email=" + email + ", petcoin=" + petcoin + ", contribuyente=" + contribuyente + '}';
+        return "Adoptante{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellido=" + apellido + ", ciudad=" + ciudad + ", email=" + email + ", petcoin=" + petcoin + ", contribuyente=" + contribuyente + '}';
     }
     
     

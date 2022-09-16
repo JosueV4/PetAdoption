@@ -1,4 +1,4 @@
 beans\Adoptante.class
 beans\Mascota.class
+servlets\PruebaServlet.class
 beans\Adopcion.class
-connection\DBConnection.class
