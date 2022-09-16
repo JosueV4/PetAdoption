@@ -42,7 +42,7 @@ public class UsuarioController implements IUsuarioController {
         return "false";
     }
 
- @Override
+    //@Override
     public String register(String username, String contrasena, String nombre, String apellidos, String email,
             double petcoin, boolean contribuyente) {
 
