@@ -3,7 +3,8 @@ package controller;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import com.google.gson.Gson;
-import beans.Adoptante;
+
+import beans.Usuario;
 import connection.DBConnection;
 
 public class UsuarioController implements IUsuarioController {
@@ -15,7 +16,7 @@ public class UsuarioController implements IUsuarioController {
 
         DBConnection con = new DBConnection();
 
-        String sql = "Select * from adoptante where username = '" + username
+        String sql = "Select * from usuario where username = '" + username
                 + "' and contrasena = '" + contrasena + "'";
         try {
             Statement st = con.getConnection().createStatement();
@@ -28,9 +29,9 @@ public class UsuarioController implements IUsuarioController {
                 double petcoin = rs.getDouble("petcoin");
                 boolean contribuyente = rs.getBoolean("contribuyente");
 
-                Adoptante adoptante
-                        = new Adoptante(username, contrasena, nombre, apellidos, email, petcoin, contribuyente);
-                return gson.toJson(adoptante);
+                Usuario usuario
+                        = new Usuario(username, contrasena, nombre, apellidos, email, petcoin, contribuyente);
+                return gson.toJson(usuario);
             }
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
@@ -41,24 +42,25 @@ public class UsuarioController implements IUsuarioController {
         return "false";
     }
 
-// @Override
-    public String register(String username, String contrasena, String nombre, String apellidos,String ciudad, String email, double petcoin, boolean contribuyente) {
+    @Override
+    public String register(String username, String contrasena, String nombre, String apellidos, String email,
+            double petcoin, boolean contribuyente) {
 
         Gson gson = new Gson();
 
         DBConnection con = new DBConnection();
-        String sql = "Insert into adoptante values('" + username + "', '" + contrasena + "', '" + nombre
-                + "', '" + apellidos + "', '" + ciudad + "', '" + email + "', " + petcoin + ", " + contribuyente + ")";
+         String sql = "Insert into usuario values('" + username + "', '" + contrasena + "', '" + nombre
+                + "', '" + apellidos + "', '" + email + "', " + petcoin + ", " + contribuyente + ")";
 
         try {
             Statement st = con.getConnection().createStatement();
             st.executeUpdate(sql);
 
-            Adoptante adoptante = new Adoptante(username, contrasena, nombre, apellidos, ciudad, email, petcoin, contribuyente);
+            Usuario usuario = new Usuario(username, contrasena, nombre, apellidos, email, petcoin, contribuyente);
 
             st.close();
 
-            return gson.toJson(adoptante);
+            return gson.toJson(usuario);
         } catch (Exception ex) {
             System.out.println(ex.getMessage());
 
@@ -69,5 +71,5 @@ public class UsuarioController implements IUsuarioController {
         return "false";
 
     }
-   
+
 }

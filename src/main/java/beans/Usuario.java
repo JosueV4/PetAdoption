@@ -1,28 +1,31 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 package beans;
 
-public class Adoptante {
+/**
+ *
+ * @author ingyo
+ */
+public class Usuario {
+
     private String username;
     private String contrasena;
     private String nombre;
     private String apellidos;
-    private String ciudad;
     private String email;
-    private Double petcoin;
+    private double petcoin;
     private boolean contribuyente;
 
-    public Adoptante(String username, String contrasena, String nombre, String apellidos, String ciudad, String email, Double petcoin, boolean contribuyente) {
+    public Usuario(String username, String contrasena, String nombre, String apellidos, String email, double petcoin, boolean contribuyente) {
         this.username = username;
         this.contrasena = contrasena;
         this.nombre = nombre;
         this.apellidos = apellidos;
-        this.ciudad = ciudad;
         this.email = email;
         this.petcoin = petcoin;
         this.contribuyente = contribuyente;
-    }
-
-    public Adoptante(String username, String contrasena, String nombre, String apellidos, String email, double petcoin, boolean contribuyente) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
     }
 
     public String getUsername() {
@@ -33,11 +36,11 @@ public class Adoptante {
         this.username = username;
     }
 
-    public String getcontrasena() {
+    public String getContrasena() {
         return contrasena;
     }
 
-    public void setcontrasena(String contrasena) {
+    public void setContrasena(String contrasena) {
         this.contrasena = contrasena;
     }
 
@@ -49,20 +52,12 @@ public class Adoptante {
         this.nombre = nombre;
     }
 
-    public String getapellidos() {
+    public String getApellidos() {
         return apellidos;
     }
 
-    public void setapellidos(String apellidos) {
+    public void setApellidos(String apellidos) {
         this.apellidos = apellidos;
-    }
-
-    public String getCiudad() {
-        return ciudad;
-    }
-
-    public void setCiudad(String ciudad) {
-        this.ciudad = ciudad;
     }
 
     public String getEmail() {
@@ -73,11 +68,11 @@ public class Adoptante {
         this.email = email;
     }
 
-    public Double getPetcoin() {
+    public double getPetcoin() {
         return petcoin;
     }
 
-    public void setPetcoin(Double petcoin) {
+    public void setPetcoin(double petcoin) {
         this.petcoin = petcoin;
     }
 
@@ -89,11 +84,13 @@ public class Adoptante {
         this.contribuyente = contribuyente;
     }
 
+    
+    
     @Override
     public String toString() {
-        return "Adoptante{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellidos=" + apellidos + ", ciudad=" + ciudad + ", email=" + email + ", petcoin=" + petcoin + ", contribuyente=" + contribuyente + '}';
+        return "Usuario{" + "username=" + username + ", contrasena=" + contrasena + ", nombre=" + nombre + ", apellidos=" + apellidos + ", email=" + email + ", petcoin=" + petcoin + ", contribuyente=" + contribuyente + '}';
     }
-    
-    
-    
+
+
+
 }

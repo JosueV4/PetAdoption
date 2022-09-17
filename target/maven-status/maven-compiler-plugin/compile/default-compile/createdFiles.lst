@@ -1,10 +1,11 @@
-beans\Adoptante.class
 beans\Mascota.class
+servlets\ServletTest.class
+beans\Usuario.class
 controller\UsuarioController.class
 controller\IUsuarioController.class
 servlets\PruebaServlet.class
 servlets\ServletUsuarioRegister.class
+test\OperacionesBD.class
 beans\Adopcion.class
 servlets\ServletUsuarioLogin.class
-test\OperacionesDB.class
 connection\DBConnection.class
