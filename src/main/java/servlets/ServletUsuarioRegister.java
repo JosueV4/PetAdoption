@@ -37,7 +37,7 @@ package servlets;
 			double petcoin = Double.parseDouble(request.getParameter("petcoin"));
 			boolean contribuyente = Boolean.parseBoolean(request.getParameter("contribuyente"));
 			
-			String result = usuario.register(username, contrasena, nombre, apellidos, email, petcoin, contribuyente);
+			String result = usuario.register(username, contrasena, nombre, apellidos, ciudad, email, petcoin, contribuyente);
 			
 			response.setContentType("text/html;charset=UTF-8");
 			PrintWriter out = response.getWriter();

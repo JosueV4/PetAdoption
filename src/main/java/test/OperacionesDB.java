@@ -4,7 +4,6 @@ import beans.Mascota;
 import connection.DBConnection;
 import java.sql.ResultSet;
 import java.sql.Statement;
-
 public class OperacionesDB {
     
     public static void main(String[] args) {

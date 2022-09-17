@@ -45,14 +45,15 @@ function autenticarAdoptante() {
 
 function registrarUsuario() {
 
-    let username = $("#input-username").val();         // Captura de datos por inpur para almacenar en base de datos
+    let username = $("#input-username").val();         // Captura de datos por input para almacenar en base de datos
     let contrasena = $("#input-contrasena").val();
     let contrasenaConfirmacion = $("#input-contrasena-repeat").val();
     let nombre = $("#input-nombre").val();
     let apellidos = $("#input-apellidos").val();
+    let ciudad = $("#input-ciudad").val();
     let email = $("#input-email").val();
-    let saldo = $("#input-saldo").val();
-    let premium = $("#input-premium").prop("checked");
+    let petcoin = $("#input-petcoin").val();
+    let contribuyente = $("#input-contribuyente").prop("checked");
 
     if (contrasena == contrasenaConfirmacion) {
 
@@ -65,6 +66,7 @@ function registrarUsuario() {
                 contrasena: contrasena,
                 nombre: nombre,
                 apellidos: apellidos,
+                ciudad: ciudad,
                 email: email,
                 petcoin: petcoin,
                 contribuyente: contribuyente
