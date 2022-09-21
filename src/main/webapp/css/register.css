@@ -1,0 +1,25 @@
+#body_register{
+    
+    background-color: #454485;
+   
+}
+.navbar{
+    background-color: #3A388C;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: flex-start;
+  
+    justify-content: flex-start;
+    
+}
+.navbar-brand{
+    color: white;
+    margin-left: 10px;
+    
+}
+#huella_register{
+    width: 50px;
+    height: 50px;
+    
+}
