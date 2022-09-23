@@ -8,4 +8,6 @@ public interface IUsuarioController {
 
     public String register(String username, String contrasena,
             String nombre, String apellidos, String email, double petcoin, boolean contribuyente);
+    
+    public String pedir(String username);
 }
