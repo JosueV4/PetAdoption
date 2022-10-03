@@ -1,94 +1,186 @@
 
+/*-------------------------------INICIO MENÚ NAVEGACIÓN------------------------*/
+.logo{
+    height: 50%;
+    width: 350px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+    background-color: #FFFFFF ;
+    list-style: none;
+    color:#fff;
+    width: 100%;
+    box-sizing: border-box;
+}
+header.abajo{
+    background: #6563F7 ;
+    padding: 5px 20px;
+}
+header:hover{
+    background-color: #B368FF;
+    padding: 5px;
+}
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+    padding-top: 10px;
+}
+header ul{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 700 ;
+    transition: 0.7s;
+}
+header.abajo.logo{
+    color: #FFFFFF
+}
+header.abajo ul li a{
+    color:#FFFFFF;
+}
+.cta{
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: #84548a;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+/*-------------------------------FIN MENÚ NAVEGACIÓN------------------------*/
+
+
+
 body{
     margin: 0;
     padding: 0;
     background: url(../img/bg7.jpeg) no-repeat center top;
-    background-size: cover; 
+    background-size: cover;
     font-family: 'Quicksand', sans-serif;
     height: 100vh;
-   
+
 }
 .login-box {
-  width: 320px;
-  height: 420px;
-  background: #FF8C00;
-  color: #fff;
-  top: 50%;
-  left: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
-  box-sizing: border-box;
-  padding: 70px 30px;
-  
+    width: 320px;
+    height: 420px;
+    background: #FF8C00;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+
 
 }
 .login-box .avatar {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  position: absolute;
-  top: -50px;
-  left: calc(50% - 50px);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
 }
 .login-box h1 {
-  margin: 0;
-  padding: 0 0 20px;
-  text-align: center;
-  font-size: 22px;
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
 }
 
 .login-box label {
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  display: block;
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
 }
 
 .login-box input {
-  width: 100%;
-  margin-bottom: 20px;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .login-box input[type="text"], .login-box input[type="password"] {
-  border: none;
-  border-bottom: 1px solid #fff;
-  background: transparent;
-  outline: none;
-  height: 40px;
-  color: #000;
-  font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #000;
+    font-size: 16px;
 }
 
 .login-box button[type="submit"] {
-  border: none;
-  outline: none;
-  height: 40px;
-  background: #483D8B;
-  color: #fff;
-  font-size: 18px;
-  border-radius: 20px;
-  width: 50%;
-  
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #483D8B;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+    width: 50%;
+
 }
 
 .login-box button[type="submit"]:hover {
-  cursor: pointer;
-  background: #ffc107;
-  color: #000;
+    cursor: pointer;
+    background: #ffc107;
+    color: #000;
 }
 
 .login-box a {
-  text-decoration: none;
-  font-size: 12px;
-  line-height: 20px;
-  color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 20px;
+    color: #000;
 }
 
 .login-box a:hover {
-  color: #fff;
+    color: #fff;
 }
 
 .sizeDiv{
     width: 40vw;
 }
 
+.alert_error{
+    background-color: white;
+    border: black 1px solid;
+    position: relative;
+    top: 650px;
+    text-align: center;
+    font-size: 25px;
+}

@@ -12,9 +12,36 @@
 
         <link href="css/login.css" rel="stylesheet"/>
         <script src="js/index.js"></script>
+        <link rel="icon" href="img/favicon.png"/>
+
+
     </head>
     <body>
-         <div class="contact-wrapper">
+
+           <!-- Inicio ESTRUCTURA HEADER -->
+        <header>    
+            <nav >
+                <ul >
+                    <li><a href="#"><img src="img/logo_inicio.png" alt="" class="logo"></a></li>
+                    <li><a ></a></li>
+                    <li><a ></a></li>
+                    <li><a ></a></li>
+                    <li><a ></a></li>
+                    <li><a ></a></li>
+                    <li><a ></a></li>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                    <li><a href="home.html">Adopta</a></li>
+                    <li><a href="donacion.html">Donacion</a></li>
+                    <li><a href="contact.html">Contacto</a></li>                
+                    <li><a class="cta" href="login.html">Login/Registro</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!-- Fin ESTRUCTURA HEADER -->
+
+
+        <div class="contact-wrapper">
             <div class="login-box">
                 <img src="img/usuario.jpeg" class="avatar" alt="Avatar Image">
                 <h1 class="h4 text-gray-900 my-3">Bienvenido</h1>
@@ -27,14 +54,14 @@
                         <input type="password" class="form-control" id="contrasena" placeholder="Contraseña" required>
                     </div>
                     <br>
-                    <button type="submit" class="btn btn-primary btn-block" id="BTNENTRAR">Entrar</button>
+                    <button type="submit" class="btn btn-primary btn-block justify-content-center" id="BTNENTRAR">Entrar</button>
                     <hr>
                 </form>
 
-                <a href="register.html">¿Aún no tienes cuenta? Registrarme</a>
+                <a href="register.html" class="btn_registro">¿Aún no tienes cuenta? Registrarme</a>
             </div>
-       
-        <div id="login-error" class="alert alert-danger d-none" role="alert">Usuario o contraseña incorrectos</div>
+
+            <div id="login-error" class="alert alert-danger d-none alert_error" role="alert">Usuario o contraseña incorrectos</div>
 
     </body>
 </html>

@@ -1,94 +1,181 @@
-/*NOSOTROS*/
-* {
-    box-sizing: border-box;
+
+/*-------------------------------INICIO MENÚ NAVEGACIÓN------------------------*/
+.logo{
+    height: 50%;
+    width: 350px;
+    padding-top: 0px;
+    margin-top: 0px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    z-index: 10;
+    background-color: #FFFFFF ;
+    list-style: none;
+    color:#fff;
+    width: 100%;
+    box-sizing: border-box; 
+}
+header.abajo{
+    background: #6563F7 ;
+    padding: 5px 20px;
 }
 
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 55px;
+}
+header ul{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+header ul li{
+    list-style: none;
+}
+header ul li a{
+    position: relative;
+    font-family: helvetica;
+
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 700 ;
+    transition: 0.7s;
+}
+header.abajo.logo{
+    color: #FFFFFF
+}
+header.abajo ul li a{
+    color:#FFFFFF;
+}
+.cta{
+    padding: 10px 24px;
+    border-radius: 30px;
+    background-color: #84548a;
+    color: #FFFFFF;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.5s;
+
+}
+
+/*-------------------------------FIN MENÚ NAVEGACIÓN------------------------*/
+
+
+
+
+
+
+
+/*NOSOTROS*/
+*
+
+
 body {
+    margin: 0;
     background: #000;
-    color: #fff;
-    line-height: 1.6;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0 1.5em;
+    font-family: 'Handlee', cursive;
+    position: relative;
+    padding-bottom: 3em;
+    min-height: 150vh;
+    
 }
 
 .container {
-    max-width: 1170px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: url(../img/pit.jpg) ;
+    background-repeat: no-repeat;
+    background-size:1020px 700px;
+    background-position-x: center;
+    
+    height: 100vh;
+
+}
+.left{ 
+    display: flex;
+    flex-direction:column;
+    place-items: center;
+    height: 100%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
-    padding: 1.5em;
+    box-shadow: 0 5px 5px 5px #000;
+    
+    
+    position: relative;
 }
-
-.us{
-    display: flex;
-    background: #FF8C00;
-}
-.logo {
-    text-align: center;
-    font-size: 3em;
-}
-
-.us-paragraph{
-    font-size: 18px;
-    text-align: center;
-}
-.paragraph-text{
-    margin: 10px 0;
-    text-align: center;
-}
-
-.us-rs{
-    margin: 20px 0;
-}
-
-.us-rs-title{
-    font-family: 'Quicksand', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    font-weight: bold;
-        
-}
-
-.rs-icon{
-  margin: 20px 0;  
-}
-
-.rs-link{
-    margin: 0 10px;
-}
-
-.us-img{
-    width: 100%;
-}
-
-.img-img{
-    object-fit: cover;
-    width: 100%;
-    border-radius: 5px;
-}
-
-.container-h4{
-    margin-left: 0px;
-margin-right: -50px;
+.left::before{
+    content: "";
     position: absolute;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(darkorange, purple);
+    opacity: 0.5;
 }
 
-/* LARGE SIZE */
-@media(min-width: 700px) {
-    body {
-        padding: 0 4em;
-    }
-    .us {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-    }
-    .us > * {
-        padding: 2em;
-    }
-    .us-rs h4,
-    .rs-icon a,
-    .us-rs{
-        padding: 1em;
-        text-align: center;
-    }
+.text{
+    justify-content: center;
+    text-align: justify-all;
+    margin: 30px;
+    
+    
 }
 
+.left h1{
+    color: #fff;
+    font-size: 50px;
+
+
+}
+.left h2{
+    color: #fff;
+    font-size: 30px;
+
+
+}
+.left p{
+    color: #fff;
+    font-size: 20px;
+
+}
+.redes{
+    color: #fff;
+    background: #000;
+    justify-content: center;
+    place-items: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+    
+    
+    
+
+}
+@media (max-width:100px){
+    .container{
+        grid-template-areas: 2fr 1fr;
+        .redes{
+            grid-column:auto;
+        }
+        
+       
+    }
+}
